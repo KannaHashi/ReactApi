@@ -246,26 +246,33 @@ class Home extends Component {
                     </div>
                     <div className="col-6"></div>
                     <div className="col-2 pl-0 ml-0 nor">
-                      <select
-                        onChange={this.onSelectItem}
-                        className="form-select custom-select"
-                      >
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="20">20</option>
-                        <option value="20">20</option>
-                        <option value="25">25</option>
-                        <option value="30">30</option>
-                      </select>
+                      <ul class="list-group list-group-horizontal-sm p-0">
+                        <li class="list-group-item m-0 py-1 px-2 bg-dark border-0">
+                          <span className="text-light">per page : </span>
+                        </li>
+                        <li class="list-group-item p-0 m-0 bg-dark">
+                          <select
+                            onChange={this.onSelectItem}
+                            className="form-select custom-select"
+                          >
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                          </select>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -307,12 +314,12 @@ class Home extends Component {
                                 ? index +
                                   this.state.per_page *
                                     this.state.current_page -
-                                  4
+                                  (this.state.per_page - 1)
                                 : this.state.index === "3"
                                 ? index +
                                   this.state.per_page *
                                     this.state.current_page -
-                                  4
+                                  (this.state.per_page - 1)
                                 : index + 1}
                             </th>
                             <td>{data.name}</td>
@@ -357,7 +364,7 @@ class Home extends Component {
                         <li className="page-item">
                           <button
                             onClick={this.onPreviousHandle}
-                            className="page-link"
+                            className="page-link text-dark"
                           >
                             <i className="fas fa-chevron-left fa-xs"></i>{" "}
                             Previous
@@ -366,7 +373,7 @@ class Home extends Component {
                         <li className="page-item">
                           <button
                             onClick={this.onNextHandle}
-                            className="page-link"
+                            className="page-link text-dark"
                           >
                             Next <i className="fas fa-chevron-right fa-xs"></i>
                           </button>

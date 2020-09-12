@@ -7,7 +7,12 @@
   white-space: nowrap;
 }
 
-::placeholder {
+.container:placeholder {
   color: white;
-  opacity: 1; /* Firefox */
+  opacity: 0.3; /* Firefox */
+}
+
+input[type="text"]:focus {
+  border: none;
+  outline: none;
 }
