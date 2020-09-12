@@ -2,3 +2,8 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+::placeholder {
+  color: #2d3436;
+  opacity: 10; /* Firefox */
+}
