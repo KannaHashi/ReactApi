@@ -79,14 +79,12 @@ class AddEditUser extends Component {
         .then((response) => {
           console.log("Berhasil", response);
           this.props.updateTable();
-          swal({
-            title: "Berhasil Update!",
-            text: "Alhamdulillah",
-            icon: "success",
-            button: "OK"
+          swal("Updated!", {
+            icon: "success"
           });
         })
         .catch((error) => {
+          swal("Error");
           console.log(error);
         });
     } else {

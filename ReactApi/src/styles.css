@@ -1,9 +1,13 @@
-.App {
-  font-family: sans-serif;
+.container-fluid {
+  font-family: Bahnschrift Light;
   text-align: center;
 }
 
+.nor {
+  white-space: nowrap;
+}
+
 ::placeholder {
-  color: #2d3436;
-  opacity: 10; /* Firefox */
+  color: white;
+  opacity: 1; /* Firefox */
 }
