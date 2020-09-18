@@ -1,18 +1,82 @@
+.navbar,
 .container-fluid {
-  font-family: Bahnschrift Light;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
   text-align: center;
+}
+
+.s5 {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.round {
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.btn {
+  background: #fb6d3a;
+  font-size: 12px;
+}
+
+.oren {
+  color: #ff7e67;
+}
+
+.bg-yoi {
+  background: #fff5ed;
 }
 
 .nor {
   white-space: nowrap;
 }
 
-.container:placeholder {
-  color: white;
-  opacity: 0.3; /* Firefox */
+.input-group,
+input[type="text"] {
+  width: 700px;
 }
 
-input[type="text"]:focus {
-  border: none;
-  outline: none;
+::placeholder {
+  font-size: 12px;
+}
+
+*:focus {
+  outline: none !important;
+  outline-offset: none !important;
+}
+
+#semua {
+  background: url("https://images.unsplash.com/photo-1517317138817-d043c7dcc35f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+}
+
+#masakan {
+  background: url("https://belajar-react.smkmadinatulquran.sch.id/image/masakan1.jpg");
+  background-size: cover;
+}
+
+#pija {
+  background: url("https://belajar-react.smkmadinatulquran.sch.id/image/pizza1.jpg");
+  background-size: cover;
+}
+
+#jus {
+  background: url("https://belajar-react.smkmadinatulquran.sch.id/image/juz1.jpg");
+  background-size: cover;
+}
+
+.yey {
+  font-size: 20px;
+}
+
+#big {
+  height: 120px;
+  width: auto;
+  padding: -20px;
+  margin: 0;
+}
+
+.rounde {
+  border-radius: 13px;
 }
